@@ -1,0 +1,61 @@
+ext {
+
+    android = [
+            compileSdkVersion: 25,
+            buildToolsVersion: "26.0.2",
+
+            minSdkVersion    : 16,
+            targetSdkVersion : 24,
+
+            versionCode      : 1,    //版本号
+            versionName      : '1.0.0', //版本名称
+            buildVersion     : 0,     //每次打包的小版本号
+
+            dataBaseVersion  : "1",  //数据库版本号
+            VSupportSdk      : '25.3.1',
+            VOkhttp          : "3.4.1",
+    ]
+    dependencies = [
+            "appcompat-v7"               : "com.android.support:appcompat-v7:${android["VSupportSdk"]}",
+            "support-v4"                 : "com.android.support:support-v4:${android["VSupportSdk"]}",
+            "design"                     : "com.android.support:design:${android["VSupportSdk"]}",
+            "recyclerview-v7"            : "com.android.support:recyclerview-v7:${android["VSupportSdk"]}",
+            "cardview-v7"                : "com.android.support:cardview-v7:${android["VSupportSdk"]}",
+            "annotations"                : "com.android.support:support-annotations:${android["VSupportSdk"]}",
+
+
+            "gson"                       : "com.google.code.gson:gson:2.6.2",
+
+            //网络请求
+            "okhttp3"                    : "com.squareup.okhttp3:okhttp:${android["VOkhttp"]}",
+            "okhttp3-logging-interceptor": "com.squareup.okhttp3:logging-interceptor:${android["VOkhttp"]}",
+
+            //图片加载
+            "glide"                      : "com.github.bumptech.glide:glide:3.7.0",
+            "picasso"                    : "com.squareup.picasso:picasso:2.5.2",
+            "iamgezoom"                  : "it.sephiroth.android.library.imagezoom:library:1.0.4",
+
+
+            "rxandroid"                  : "io.reactivex:rxandroid:1.2.1",
+            "rxjava"                     : "io.reactivex:rxjava:1.2.0",
+            "rxpermissions"              : "com.tbruyelle.rxpermissions:rxpermissions:0.9.4@aar",
+
+            "rxandroid2"                 : "io.reactivex.rxjava2:rxandroid:2.0.1",
+            "rxjava2"                    : "io.reactivex.rxjava2:rxjava:2.0.5",
+            "rxpermissions2"             : "com.tbruyelle.rxpermissions2:rxpermissions:0.9.1@aar",
+
+            //recyclerView
+            "xrecyclerview"              : "com.github.limedroid:ARecyclerView:v1.1.5",
+            "avi-loading"                : "com.wang.avi:library:1.0.2",
+
+            //检测内存泄漏
+            "canary-debug"               : "com.squareup.leakcanary:leakcanary-android:1.4-beta2",
+            "canary-release"             : "com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2",
+
+            //eventBus
+            "eventbus"                   : "org.greenrobot:eventbus:3.1.1"
+
+
+    ]
+
+}

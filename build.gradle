@@ -1,0 +1,24 @@
+apply from: "conf.gradle"
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.3'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io" }
+        mavenCentral()
+
+
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
