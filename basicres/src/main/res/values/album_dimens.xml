@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--**********************************************
+      *           List - List Item                 *
+      **********************************************-->
+
+    <dimen name="dds_list_item_inset_left">16dp</dimen>
+    <dimen name="dds_list_divider_height">1px</dimen>
+    <dimen name="dds_list_divider_height_negative">-1px</dimen>
+    <dimen name="dds_group_list_section_header_footer_text_size">13sp</dimen>
+
+
+</resources>

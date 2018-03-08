@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppRootTheme" parent="android:Theme.Holo.Light" />
+
+    <style name="AppBaseTheme" parent="AppRootTheme">
+        <item name="android:listDivider">@drawable/dds_divider</item> <!--listView分割线-->
+        <item name="android:gridViewStyle">@style/GridView</item>
+        <item name="android:imageButtonStyle">@style/ImageButton</item>
+        <item name="android:buttonStyle">@style/Button</item>
+        <item name="android:editTextStyle">@style/EditText</item>
+        <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextView</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView</item>
+        <item name="android:textViewStyle">@style/TextView</item>
+
+    </style>
+
+    <style name="AppConfigTheme" parent="AppBaseTheme" />
+
+    <style name="DDS.UI" parent="AppConfigTheme">
+        <item name="dds_config_color_background">@color/dds_config_color_background</item>
+        <item name="dds_config_color_background_pressed">@color/dds_config_color_background_pressed</item>
+        <item name="dds_config_color_black">@color/dds_config_color_black</item>
+
+        <item name="dds_config_color_gray_1">@color/dds_config_color_gray_1</item>
+        <item name="dds_config_color_gray_2">@color/dds_config_color_gray_2</item>
+        <item name="dds_config_color_gray_3">@color/dds_config_color_gray_3</item>
+        <item name="dds_config_color_gray_4">@color/dds_config_color_gray_4</item>
+        <item name="dds_config_color_gray_5">@color/dds_config_color_gray_5</item>
+        <item name="dds_config_color_gray_6">@color/dds_config_color_gray_6</item>
+        <item name="dds_config_color_gray_7">@color/dds_config_color_gray_7</item>
+        <item name="dds_config_color_gray_8">@color/dds_config_color_gray_8</item>
+        <item name="dds_config_color_gray_9">@color/dds_config_color_gray_9</item>
+
+    </style>
+
+    <!-- ListView Start -->
+    <style name="ListViewBase" parent="android:Widget.Holo.Light.ListView" />
+
+    <style name="ListView" parent="ListViewBase">
+        <item name="android:background">@color/dds_config_color_transparent</item>
+        <item name="android:listSelector">@color/dds_config_color_transparent</item>
+        <item name="android:divider">@drawable/dds_divider_bottom_bitmap</item>
+        <item name="android:dividerHeight">@dimen/dds_list_divider_height</item>
+    </style>
+
+    <!-- GridView -->
+    <style name="GridViewBase" parent="android:Widget.Holo.Light.GridView" />
+
+    <style name="GridView" parent="GridViewBase">
+        <item name="android:background">@color/dds_config_color_transparent</item>
+        <item name="android:listSelector">@color/dds_config_color_transparent</item>
+    </style>
+
+
+    <!--ImageButton-->
+    <style name="ImageButtonBase" parent="android:Widget.Holo.Light.ImageButton" />
+
+    <style name="ImageButton" parent="ImageButtonBase">
+        <item name="android:background">@color/dds_config_color_transparent</item>
+    </style>
+
+    <!--button-->
+    <style name="ButtonBase" parent="android:Widget.Holo.Light.Button" />
+
+    <style name="Button" parent="ButtonBase" />
+
+
+    <!--EditText-->
+    <style name="EditTextBase" parent="android:Widget.Holo.Light.EditText" />
+
+    <style name="EditText" parent="EditTextBase">
+        <item name="android:textColor">@color/dds_config_color_gray_1</item>
+        <item name="android:textColorHint">@color/dds_config_color_gray_4</item>
+        <!-- 光标颜色与textColor一致，若要自定义，应该用ShapeDrawable，不能简单指定一个color -->
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+
+
+    <!--AutoCompleteTextView-->
+    <style name="AutoCompleteTextViewBase" parent="android:Widget.Holo.Light.AutoCompleteTextView" />
+
+    <style name="AutoCompleteTextView" parent="AutoCompleteTextViewBase">
+        <item name="android:textColor">?attr/dds_config_color_gray_1</item>
+        <item name="android:textColorHint">?attr/dds_config_color_gray_4</item>
+        <!-- 光标颜色与textColor一致，若要自定义，应该用ShapeDrawable，不能简单指定一个color -->
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+
+
+    <!-- 下拉列表，例如AutoCompleteTextView的补全列表 -->
+    <style name="DropDownListViewBase" parent="android:Widget.Holo.Light.ListView.DropDown" />
+
+    <style name="DropDownListView" parent="DropDownListViewBase">
+        <item name="android:divider">@drawable/dds_divider_bottom_bitmap</item>
+        <item name="android:dividerHeight">@dimen/dds_list_divider_height</item>
+        <item name="android:background">@color/dds_config_color_white</item>
+    </style>
+
+
+    <style name="TextView" parent="android:Widget.TextView">
+        <item name="android:textAppearance">@style/DDSTextAppearance</item>
+        <!-- textColorHighlight 放在appearance中无效，好像TextView总是默认存在一个textColorHighlight
+             会覆盖掉它，并不知道原因 -->
+        <item name="android:textColorHighlight">?attr/dds_config_color_background_pressed</item>
+    </style>
+
+    <style name="TextAppearanceBase" parent="android:TextAppearance.Holo" />
+
+    <style name="DDSTextAppearance" parent="TextAppearanceBase">
+        <item name="android:textColor">?attr/dds_config_color_black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColorHighlight">?attr/dds_config_color_background_pressed</item>
+    </style>
+
+
+</resources>
